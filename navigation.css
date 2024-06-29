@@ -1,0 +1,38 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+nav{
+ background-color: rgb(248, 248, 248);
+ position:  fixed;
+ top: 0; left: 0; right: 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: .5rem 9%; 
+ box-shadow:1rem .2rem 1rem;
+}
+.header{
+	padding-left: 150px;
+}
+
+.header a{
+	padding-left: 15px;
+	font-size: 1.3rem;
+	text-decoration: none;
+    color: black;
+}
+.icons{
+	font-size: 20px;
+}
+
+.icons :hover{
+   color: orange;
+}
+.header a:hover{
+    color: orange;
+}
+.logo{
+    width: 5rem;
+    height:5rem;
+}
