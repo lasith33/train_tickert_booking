@@ -21,10 +21,36 @@
 				<a href="">About us</a>
 			</div>
 			<div class=" icons">
-				<div class="fas fa-user" id="login-btn"></div>
+				<div class="fas fa-user" id="login-btn" onclick="openPopup()"></div>
 			</div>
 		</nav>
 	</div>
+	<!--loging window-->
+	<div class="loging" id="popup">
+		<form >
+			<h3>Loging</h3>
+			<lable>Email</lable><br>
+			<input type="text" name="email"> <div class=" fas fa-envelope" id="envelope-btn">  </div><br>
+			<lable>Password</lable><br>
+			<input type="password" name="password"> <div class=" fas fa-key" id="key-btn">  </div><br>
+			<p>fogot password</p>
+			<p>Don't have an account? <a href="#">register</a></p> 
+			<div class="button">
+				<button name="loging" onclick="closePopup()">loging</button>
+		    </div>
+	    </form>
+	</div>
+
+	<script>
+		let popup = document.getElementById("popup");
+
+		function openPopup(){
+			popup.classList.add("open-popup");
+		}
+		function closePopup(){
+			popup.classList.remove("open-popup");
+		}
+	</script>
 
 </body>
 </html>

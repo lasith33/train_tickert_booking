@@ -36,3 +36,59 @@ nav{
     width: 5rem;
     height:5rem;
 }
+/* loging window */
+.loging {
+	position: absolute;
+	top: 0;  right: 30rem;
+	height: 22rem;
+	max-width: 80rem;
+	justify-content: center;
+	align-items: center;
+	background: darkgrey;	
+	transform: translate(-50%,-50%) scale(0.1);
+	visibility: hidden;
+	display: flex;
+	opacity: .8;
+}
+
+.open-popup{
+	visibility: visible;
+	top: 400px;
+	transform: translate(-50%,-50%) scale(1);
+	transition: transform 0.4s, top 0.4s;
+}
+.loging form{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	opacity: 1;
+}
+.loging form input{
+	width: 13rem;
+	height: 2rem;
+}
+
+.loging h3{
+	font-size: 25px;
+	text-align: center;
+} 
+.loging lable{
+	font-size: 18px;
+}
+.loging form a{
+	text-decoration: none;
+}
+.loging form a:hover{
+	font-size: 20px;
+}
+.button{
+    text-align: center;
+	
+}
+.loging button{
+	padding: 10px 30px;
+	font-size: 15px;
+}
+.loging button:hover{
+	background-color: orange;
+	font-weight: bold;
+}
