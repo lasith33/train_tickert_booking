@@ -52,6 +52,19 @@ body{
 	opacity: .8;
 }
 
+.logout {
+	position: absolute;
+	top: 5rem;  right: 2rem;
+	height: 10rem;
+	max-width: 20rem;
+	justify-content: center;
+	align-items: center;
+	background: darkgrey;	
+	transform: translate(-50%,-50%) scale(0.1);
+	visibility: hidden;
+	display: flex;
+	opacity: .8;
+}
 .open-popup{
 	visibility: visible;
 	top: 400px;
@@ -59,7 +72,20 @@ body{
 	transition: transform 0.4s, top 0.4s;
 	z-index: 2;
 }
+
+.open-popup1{
+	visibility: visible;
+	top: 200px;
+	transform: translate(-50%,-50%) scale(1);
+	transition: transform 0.4s, top 0.4s;
+	z-index: 2;
+}
 .loging form{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	opacity: 1;
+}
+.logout form{
 	padding-left: 1rem;
 	padding-right: 1rem;
 	opacity: 1;
@@ -73,28 +99,62 @@ body{
 	font-size: 25px;
 	text-align: center;
 } 
+.logout h4{
+	
+	text-align: center;
+} 
 .loging lable{
+	font-size: 18px;
+}
+.loging form p{
+	color: black;
+	font-weight: 500;
 	font-size: 18px;
 }
 .loging form a{
 	text-decoration: none;
+	color: black;
+	font-weight: 800;
+	font-size: 18px;
 }
-.loging form a:hover{
+.logout form a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding: 5px 80px;
+	background-color: orange;
+	
+}
+.loging form a:hover,
+.logout form a:hover{
 	font-size: 20px;
 }
+
 .button{
     text-align: center;
+	
+}
+.logout .button{
+    text-align: center;
+	padding-top: 10px;
 	
 }
 .loging button{
 	padding: 10px 30px;
 	font-size: 15px;
 }
+.logout button{
+	padding: 3px 30px;
+	font-size: 10px;
+}
 .loging button:hover{
 	background-color: orange;
 	font-weight: bold;
 }
-
+.logout button:hover{
+	background-color: orange;
+	font-weight: bold;
+}
 /*banner */
 .d-block{
 	height: 600px;
@@ -114,7 +174,7 @@ body{
 	z-index: 1;
 }
 .footer_wrapper{
-	background: url(footer.png);
+	background: url(images/footer.png);
 	
 	width: 90rem;
 	height: 20rem;

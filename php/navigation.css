@@ -1,0 +1,253 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.nav{
+ background-color: rgb(248, 248, 248);
+ position:  fixed;
+ top: 0; left: 0; right: 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: .5rem 9%; 
+ box-shadow:1rem .2rem 1rem;
+ z-index: 2;
+}
+.header{
+	padding-left: 150px;
+}
+
+.header a{
+	padding-left: 15px;
+	font-size: 1.3rem;
+	text-decoration: none;
+    color: black;
+}
+.icons{
+	font-size: 20px;
+}
+
+.icons :hover{
+   color: orange;
+}
+.header a:hover{
+    color: orange;
+}
+.logo{
+    width: 5rem;
+    height:5rem;
+}
+/* loging window */
+.loging {
+	position: absolute;
+	top: 0;  right: 30rem;
+	height: 22rem;
+	max-width: 80rem;
+	justify-content: center;
+	align-items: center;
+	background: darkgrey;	
+	transform: translate(-50%,-50%) scale(0.1);
+	visibility: hidden;
+	display: flex;
+	opacity: .8;
+}
+
+.logout {
+	position: absolute;
+	top: 5rem;  right: 2rem;
+	height: 10rem;
+	max-width: 20rem;
+	justify-content: center;
+	align-items: center;
+	background: darkgrey;	
+	transform: translate(-50%,-50%) scale(0.1);
+	visibility: hidden;
+	display: flex;
+	opacity: .8;
+}
+.open-popup{
+	visibility: visible;
+	top: 400px;
+	transform: translate(-50%,-50%) scale(1);
+	transition: transform 0.4s, top 0.4s;
+	z-index: 2;
+}
+
+.open-popup1{
+	visibility: visible;
+	top: 200px;
+	transform: translate(-50%,-50%) scale(1);
+	transition: transform 0.4s, top 0.4s;
+	z-index: 2;
+}
+.loging form{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	opacity: 1;
+}
+.logout form{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	opacity: 1;
+}
+.loging form input{
+	width: 13rem;
+	height: 2rem;
+}
+
+.loging h3{
+	font-size: 25px;
+	text-align: center;
+} 
+.logout h4{
+	
+	text-align: center;
+} 
+.loging lable{
+	font-size: 18px;
+}
+.loging form p{
+	color: black;
+	font-weight: 500;
+	font-size: 18px;
+}
+.loging form a{
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
+	font-size: 18px;
+}
+.logout form a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding: 5px 80px;
+	background-color: orange;
+	
+}
+.loging form a:hover,
+.logout form a:hover{
+	font-size: 20px;
+}
+
+.button{
+    text-align: center;
+	
+}
+.logout .button{
+    text-align: center;
+	padding-top: 10px;
+	
+}
+.loging button{
+	padding: 10px 30px;
+	font-size: 15px;
+}
+.logout button{
+	padding: 3px 30px;
+	font-size: 10px;
+}
+.loging button:hover{
+	background-color: orange;
+	font-weight: bold;
+}
+.logout button:hover{
+	background-color: orange;
+	font-weight: bold;
+}
+/*banner */
+.d-block{
+	height: 600px;
+	width: 200px;
+
+}
+.banner{
+	margin: 10px;
+	padding-top: 50px;
+}
+.banner  h1{
+	position: absolute;
+	top: 50%; left: 2%;
+	color: white;
+	align-items: center;
+	text-align: center;
+	z-index: 1;
+}
+.footer_wrapper{
+	background: url(images/footer.png);
+	
+	width: 90rem;
+	height: 20rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	padding-top: 3rem;
+	z-index: 1;
+}
+
+.footer_wrapper h5{
+    color: white;
+    font-size:2rem;
+    margin-bottom: 1rem;
+  }
+  .footer_wrapper ul li{
+    margin-bottom: 0.5rem;
+    list-style: none;
+  }
+  .footer_wrapper .company_details{
+    font-size: 1rem;
+	color: white;
+  }
+  .footer_wrapper .contact-info li a{
+    color: rgb(255, 249, 249);
+    font-size: 1.3rem;
+	text-decoration: none;
+  }
+  .footer_wrapper .link-widget li a,
+  .footer_wrapper p{
+    color: rgb(5, 1, 1);
+    font-size: 1.6rem;
+    padding-left: 0.2rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  .footer_wrapper .social-network a{
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.2rem;
+    margin: .5rem;
+    display: inline-block;
+    border: 0.125rem solid gray;
+    color: white;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045,0.355,1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045,0.355,1);
+	font-weight: 2rem;
+  }
+
+  .footer_wrapper .social-network a:hover{
+    background-color: greenyellow;
+    border-color: #5cb917;
+    color: white;
+    box-shadow: 0 0.625rem .9375rem 0 rgb(0 0 0/10%);
+    transform: translateY(-0.1875rem);
+  }
+
+  .link-widge  li a{
+	color: rgb(12, 1, 1);
+	text-decoration: none;
+	font-weight: bold;
+	
+  }
+
+  .form-group input,
+  .form-group button{
+	color: aliceblue;
+	font-weight: 2rem;
+  }
+
+
+
+
