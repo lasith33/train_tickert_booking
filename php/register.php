@@ -9,7 +9,7 @@
 		
 </head>
 <body>
-	<section>
+	<section class="section">
         <div class="container">
           <h1 class="form-title">Registration</h1>
           <form method="POST"  action="loging_register.php">

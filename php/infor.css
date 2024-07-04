@@ -8,3 +8,54 @@
     text-align: right;
    
 }
+.select{
+    padding-top: 200px;
+    text-align: center;
+}
+.select select{
+    padding: 10px 40px;
+   
+}
+.select option{
+    font-size: 20px;
+}
+.select label{
+    font-size: 20px;
+    color: chocolate;
+    font-weight: 500;
+}
+.select .button{
+   padding-top: 20px;
+   font-size: 20px;
+}
+.select button{
+    padding: 5px 20px;
+    
+}
+.select button:hover{
+    background-color: orange;
+    
+}
+.output{
+    padding-left: 27rem;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+.output h3{
+   padding-left: 14rem; 
+}
+
+.output table{
+    justify-content: center;
+    align-items: center;
+    padding-left: 20rem;
+    
+   
+}
+.output th{
+    padding: 0  100px;
+    font-size: 25px;
+}
+.ticket{
+    padding-top: 15rem;
+}

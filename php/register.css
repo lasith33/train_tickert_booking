@@ -1,4 +1,4 @@
-section{
+.section{
    background: url("images/train.jpg");
    background-repeat: no-repeat;
    background-size: cover;
@@ -91,7 +91,7 @@ section{
 }
 
 @media(max-width:600px){
-    .container{
+    .containers{
         min-width: 280;
     }
     .user-input-box{

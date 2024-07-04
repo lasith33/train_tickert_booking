@@ -85,7 +85,7 @@
 
     <div class="grid-container" >
         <div class="words">
-            <img src="lanka.png" alt="sri lanka railway map">
+            <img src="images/lanka.png" alt="sri lanka railway map">
         </div>
         <div  class="eee">
             <p>On this page you'll find timetables & fares for the most popular trains, stations & routes:</p>
