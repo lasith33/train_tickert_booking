@@ -25,7 +25,9 @@ body{
 }
 .icons{
 	font-size: 20px;
+	
 }
+
 
 .icons :hover{
    color: orange;
@@ -51,12 +53,30 @@ body{
 	display: flex;
 	opacity: .8;
 }
+.qr img{
+	width: 200px;
+	height: 200px;
+}
 
 .logout {
 	position: absolute;
 	top: 5rem;  right: 2rem;
 	height: 10rem;
 	max-width: 20rem;
+	justify-content: center;
+	align-items: center;
+	background: darkgrey;	
+	transform: translate(-50%,-50%) scale(0.1);
+	visibility: hidden;
+	display: flex;
+	opacity: .8;
+}
+
+.qr {
+	position: absolute;
+	top: 5rem;  right: 2rem;
+	height: 20rem;
+	max-width: 30rem;
 	justify-content: center;
 	align-items: center;
 	background: darkgrey;	
@@ -81,6 +101,11 @@ body{
 	z-index: 2;
 }
 .loging form{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	opacity: 1;
+}
+.qr .fix{
 	padding-left: 1rem;
 	padding-right: 1rem;
 	opacity: 1;
@@ -143,18 +168,26 @@ body{
 	padding: 10px 30px;
 	font-size: 15px;
 }
+
+.qr .button{
+	padding-top: 10px;
+}
 .logout button{
 	padding: 3px 30px;
 	font-size: 10px;
 }
-.loging button:hover{
+.loging button:hover,
+.qr button:hover{
 	background-color: orange;
 	font-weight: bold;
 }
 .logout button:hover{
 	background-color: orange;
 	font-weight: bold;
+	
 }
+
+
 /*banner */
 .d-block{
 	height: 600px;

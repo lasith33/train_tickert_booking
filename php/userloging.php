@@ -22,14 +22,17 @@
             <img src="images/images.jpg" alt="logo"  class="logo">
         </div>
 			<div class="header">
-				<a href="">Home</a>
+				<a href="userloging.php">Home</a>
 				<a href="timetable.php">Time table</a>
-				<a href="">Tickert booking</a>
+				<a href="booking.php">Tickert booking</a>
 				<a href="">About us</a>
 			</div>
-			<div class=" icons">
+			<div class="icons">
 				<div class="fas fa-user" id="login-btn" onclick="openPopup()"></div>
+				
 			</div>
+			<a href="ticket.php"> <img  src="images\ticket.png" alt="ticket" width="20" height="20"></a>
+			
             <div class="logout" id="popup">
 		<form >
             <h4>  <?php
@@ -107,7 +110,7 @@
                       called Maradana, most but not all trains stop here, but Colombo Fort is the best-located station to use.  See a map of 
                       Colombo showing stations.</p>
 
-            <img src="colombo fort railway.png" alt="colombo fort railway"  style="padding-top: 60px;">
+            <img src="images/colombo fort railway.png" alt="colombo fort railway"  style="padding-top: 60px;">
             
         </div>
     </div>

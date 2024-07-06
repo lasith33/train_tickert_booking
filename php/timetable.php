@@ -22,14 +22,15 @@
             <img src="images/images.jpg" alt="logo"  class="logo">
         </div>
 			<div class="header">
-				<a href="">Home</a>
-				<a href="">Time table</a>
-				<a href="">Tickert booking</a>
+				<a href="userloging.php">Home</a>
+				<a href="timetable.php">Time table</a>
+				<a href="booking.php">Tickert booking</a>
 				<a href="">About us</a>
 			</div>
 			<div class=" icons">
 				<div class="fas fa-user" id="login-btn" onclick="openPopup()"></div>
 			</div>
+			<a href="ticket.php"> <img  src="images\ticket.png" alt="ticket" width="20" height="20"></a>
             <div class="logout" id="popup">
 		<form >
             <h4>  <?php

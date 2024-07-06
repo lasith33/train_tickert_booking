@@ -23,14 +23,15 @@
             <img src="images/images.jpg" alt="logo"  class="logo">
         </div>
 			<div class="header">
-				<a href="">Home</a>
-				<a href="">Time table</a>
-				<a href="">Tickert booking</a>
+				<a href="userloging.php">Home</a>
+				<a href="timetable.php">Time table</a>
+				<a href="tikert.php">Tickert booking</a>
 				<a href="">About us</a>
 			</div>
 			<div class=" icons">
 				<div class="fas fa-user" id="login-btn" onclick="openPopup()"></div>
 			</div>
+			<a href="ticket.php"> <img  src="images\ticket.png" alt="ticket" width="20" height="20"></a>
             <div class="logout" id="popup">
 		<form >
             <h4>  <?php
@@ -52,56 +53,74 @@
 		</nav>
 	</section>
 <!--========tiket====-->
-   <div class="ticket">
-    <lable>Name</lable>
-    <input type="text" name="name" placeholder="Enter tickert booking person name"><br>
+<div class="ticket">
+	<form method="POST"  action="tikertboking.php">
+    <div>
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter tickert booking person name" class="input"><br>
+    </div>
+    <div>
     <label>From</label>
-        <select>
-            <option>galle</option>
-            <option>hikkaduwa</option>
-            <option>Ambalangoda</option>
-            <option>Aluthgama</option>
-            <option>Panadura</option>
-            <option>Dehiwela</option>
-            <option>Colombo Fort</option>
-            <option>Beliatta</option>
-            <option>Matara</option>
-            <option>Ahangama</option>
-            <option>Koggala</option>
-            <option>Mirissa</option>
-            <option>mardana</option>
-            <option>kelaniya</option>
-            <option>Polgahawela</option>
-            <option>kurunegala</option>
-            <option>Anuradapura</option>
+        <select name="from">
+            <option value="galle">galle</option>
+            <option value="hikkaduwa">hikkaduwa</option>
+            <option value="Ambalangoda">Ambalangoda</option>
+            <option value="Aluthgama">Aluthgama</option>
+            <option value="Aluthgama">Aluthgama</option>
+            <option value="Dehiwela">Dehiwela</option>
+            <option value="Colombo Fort">Colombo Fort</option>
+            <option value="Beliatta">Beliatta</option>
+            <option value="Matara">Matara</option>
+            <option value="Ahangama">Ahangama</option>
+            <option value="Koggala">Koggala</option>
+            <option value="Mirissa">Mirissa</option>
+            <option value="mardana">mardana</option>
+            <option value="kelaniya">kelaniya</option>
+            <option value="Polgahawela">Polgahawela</option>
+            <option value="kurunegala">kurunegala</option>
+            <option value="Anuradapura">Anuradapura</option>
         </select>
         <label>To</label>
-        <select>
-            <option>galle</option>
-            <option>hikkaduwa</option>
-            <option>Ambalangoda</option>
-            <option>Aluthgama</option>
-            <option>Panadura</option>
-            <option>Dehiwela</option>
-            <option>Colombo Fort</option>
-            <option>Beliatta</option>
-            <option>Matara</option>
-            <option>Ahangama</option>
-            <option>Koggala</option>
-            <option>Mirissa</option>
-            <option>mardana</option>
-            <option>kelaniya</option>
-            <option>Polgahawela</option>
-            <option>kurunegala</option>
-            <option>Anuradapura</option>
+        <select name="to">
+		<option value="galle">galle</option>
+            <option value="hikkaduwa">hikkaduwa</option>
+            <option value="Ambalangoda">Ambalangoda</option>
+            <option value="Aluthgama">Aluthgama</option>
+            <option value="Aluthgama">Aluthgama</option>
+            <option value="Dehiwela">Dehiwela</option>
+            <option value="Colombo Fort">Colombo Fort</option>
+            <option value="Beliatta">Beliatta</option>
+            <option value="Matara">Matara</option>
+            <option value="Ahangama">Ahangama</option>
+            <option value="Koggala">Koggala</option>
+            <option value="Mirissa">Mirissa</option>
+            <option value="mardana">mardana</option>
+            <option value="kelaniya">kelaniya</option>
+            <option value="Polgahawela">Polgahawela</option>
+            <option value="kurunegala">kurunegala</option>
+            <option value="Anuradapura">Anuradapura</option>
         </select><br>
-    <lable>Ticker count</lable>
-    <input type="text" name="count" placeholder="Enter how many tickert"><br>
-    <select>
-        <option name="1st">1st class</option>
-        <option name="1st">2st class</option>
-        <option name="1st">3st class</option>
+        </div>
+        <div>
+    <label>Tickert count</label>
+    <input type="text" name="count" placeholder="Enter how many tickert">
+    </div>
+    <div>
+        <label>Date :</label>
+        <input type="date" name="date" >
+    </div>  
+    <div>
+        <label>class</label>
+    <select name="class">
+        <option value="1st">1st class</option>
+        <option value="2st">2st class</option>
+        <option value="3st">3st class</option>
     </select>
+    </div>
+    <div>
+        <button name="submit">Submit</button>
+    </div>
+	</form>
   </div>
        
 
